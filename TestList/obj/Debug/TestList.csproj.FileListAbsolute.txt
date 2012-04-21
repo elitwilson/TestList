@@ -1,0 +1,7 @@
+d:\documents\visual studio 2010\Projects\TestList\TestList\bin\TestList.dll
+d:\documents\visual studio 2010\Projects\TestList\TestList\bin\TestList.pdb
+d:\documents\visual studio 2010\Projects\TestList\TestList\bin\EntityFramework.dll
+d:\documents\visual studio 2010\Projects\TestList\TestList\bin\EntityFramework.xml
+d:\documents\visual studio 2010\Projects\TestList\TestList\obj\Debug\ResolveAssemblyReference.cache
+d:\documents\visual studio 2010\Projects\TestList\TestList\obj\Debug\TestList.dll
+d:\documents\visual studio 2010\Projects\TestList\TestList\obj\Debug\TestList.pdb

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testList>
+  <test>
+    <id>1</id>
+    <name>Mini Mental Status Exam</name>
+    <abbreviation>MMSE</abbreviation>
+    <normVariables>Age</normVariables>
+    <age>Adult</age>
+    <type>Screener</type>
+    <scoring>Calculation</scoring>
+    <usage>Often</usage>
+  </test>
+  <test>
+    <id>2</id>
+    <name>Remote Memory</name>
+    <abbreviation>Remote Memory</abbreviation>
+    <normVariables>NA</normVariables>
+    <age>Adult</age>
+    <type>NA</type>
+    <scoring>NA</scoring>
+    <usage>Sometimes</usage>
+  </test>
+  <test>
+    <id>3</id>
+    <name>Wechsler Intelligence Scale for Children, 4th Ed.</name>
+    <abbreviation>WISC-IV</abbreviation>
+    <normVariables>Age by Month</normVariables>
+    <age>Child</age>
+    <type>IQ</type>
+    <scoring>Software</scoring>
+    <usage>Often</usage>
+  </test>
+  <test>
+    <id>4</id>
+    <name>Wechsler Intelligence Scale for Children, 4th Ed.</name>
+    <abbreviation>WISC-IV</abbreviation>
+    <normVariables>Age by month</normVariables>
+    <age>Child</age>
+    <type>IQ</type>
+    <scoring>Scoring</scoring>
+    <usage>Often</usage>
+  </test>
+  <test>
+    <id>5</id>
+    <name>Wechsler Adult Intelligence Scale, 4th Ed.</name>
+    <abbreviation>WAIS-IV</abbreviation>
+    <normVariables>Age</normVariables>
+    <age>Adult</age>
+    <type>IQ</type>
+    <scoring>Software</scoring>
+    <usage>Often</usage>
+  </test>
+</testList>

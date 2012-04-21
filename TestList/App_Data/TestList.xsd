@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="testList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="test">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" />
+              <xs:element name="name" />
+              <xs:element name="abbreviation" />
+              <xs:element name="normVariables" />
+              <xs:element name="age" />
+              <xs:element name="type" />
+              <xs:element name="scoring" />
+              <xs:element name="usage" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

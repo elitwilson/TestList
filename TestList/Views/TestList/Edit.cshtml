@@ -1,0 +1,83 @@
+﻿@model TestList.Models.Test
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Test</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Abbreviation)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Abbreviation)
+            @Html.ValidationMessageFor(model => model.Abbreviation)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NormVariables)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NormVariables)
+            @Html.ValidationMessageFor(model => model.NormVariables)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Age)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Age)
+            @Html.ValidationMessageFor(model => model.Age)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Type)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Type)
+            @Html.ValidationMessageFor(model => model.Type)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Scoring)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Scoring)
+            @Html.ValidationMessageFor(model => model.Scoring)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Usage)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Usage)
+            @Html.ValidationMessageFor(model => model.Usage)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

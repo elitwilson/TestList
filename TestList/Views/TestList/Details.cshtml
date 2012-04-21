@@ -1,0 +1,50 @@
+﻿@model TestList.Models.Test
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Test</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">Abbreviation</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Abbreviation)
+    </div>
+
+    <div class="display-label">NormVariables</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NormVariables)
+    </div>
+
+    <div class="display-label">Age</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Age)
+    </div>
+
+    <div class="display-label">Type</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Type)
+    </div>
+
+    <div class="display-label">Scoring</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Scoring)
+    </div>
+
+    <div class="display-label">Usage</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Usage)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

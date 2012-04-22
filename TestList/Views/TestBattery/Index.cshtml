@@ -40,7 +40,6 @@
                 $(element).attr('class', 'remove');
                 $('#' + testId).text('Add');
             }
-            //alert(rowHtml);
             return false;
         });
     });
@@ -57,12 +56,11 @@
         </tr>
     </thead>
     <tbody>
-    @{int i = 1;}
     @foreach (var item in Model.Tests)
     {
-        <tr id="test@(i)">
+        <tr id="test@(item.Id)">
             <td>@item.Name</td>
-            <td><a href="" id="@(i++)" class="add addRemoveLink">Add</a></td>
+            <td><a href="" id="@(item.Id)" class="add addRemoveLink">Add</a></td>
         </tr>
     }
     </tbody>

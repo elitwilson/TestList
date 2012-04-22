@@ -50,4 +50,24 @@
     <scoring>Software</scoring>
     <usage>Often</usage>
   </test>
+  <test>
+    <id>6</id>
+    <name>Wechsler Abbreviated Scale of Intelligence</name>
+    <abbreviation>WASI</abbreviation>
+    <normVariables>Age by month</normVariables>
+    <age>Both</age>
+    <type>IQ</type>
+    <scoring>Look-up Table</scoring>
+    <usage>Often</usage>
+  </test>
+  <test>
+    <id>7</id>
+    <name>Wechsler Adult Intelligence Scale, 3rd Ed.</name>
+    <abbreviation>WAIS-III</abbreviation>
+    <normVariables>Age</normVariables>
+    <age>Adult</age>
+    <type>IQ</type>
+    <scoring>Software</scoring>
+    <usage>Often</usage>
+  </test>
 </testList>

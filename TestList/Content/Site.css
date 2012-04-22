@@ -106,6 +106,8 @@ header h1, #header h1 {
     border-radius: 4px 0 0 0;
     -webkit-border-radius: 4px 0 0 0;
     -moz-border-radius: 4px 0 0 0;
+    clear:both;
+    min-height: 400px;
 }
 
 footer, 
@@ -120,6 +122,19 @@ footer,
     border-radius: 0 0 4px 4px;
     -webkit-border-radius: 0 0 4px 4px;
     -moz-border-radius: 0 0 4px 4px;
+    clear:both;
+}
+
+#left-container
+{
+    float: left;
+    width:48%;
+}
+
+#right-container
+{
+    width:48%;
+    float:right;
 }
 
 /* TAB MENU   
@@ -229,6 +244,21 @@ table th {
     text-align: left;
     background-color: #e8eef4;
     border: solid 1px #e8eef4;
+}
+
+.test-battery-tables
+{
+    width:100%;
+}
+
+#test-list
+{
+    
+}
+
+#test-battery
+{
+    
 }
 
 /* MISC  

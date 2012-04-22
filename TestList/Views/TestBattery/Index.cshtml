@@ -1,0 +1,86 @@
+﻿@model TestList.ViewModels.TestBatteryVM
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="@Url.Content("~/Scripts/jquery-1.5.1.min.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var testId;
+        var rowHtml;
+        var rowClass;
+
+        $('a.addRemoveLink').click(function (event) {
+            event.preventDefault();
+
+            rowClass = $(this).attr('class');
+
+            //alert(rowClass);
+            if (rowClass == "add addRemoveLink") {
+
+                //Take row and move it to Test Battery
+                var element;
+                $(this).attr('class', 'remove addRemoveLink');
+                testId = $(this).attr('id');
+                element = $('#test' + testId);
+                $(element).appendTo('#test-battery');
+                $(element).attr('class', 'remove');
+                $('#' + testId).text('Remove');
+
+            }
+            else {
+
+                //Take row and move it to Test List
+                var element;
+                $(this).attr('class', 'add addRemoveLink');
+                testId = $(this).attr('id');
+                element = $('#test' + testId);
+                $(element).appendTo('#test-list');
+                $(element).attr('class', 'remove');
+                $('#' + testId).text('Add');
+            }
+            //alert(rowHtml);
+            return false;
+        });
+    });
+</script>
+
+
+<div id="left-container">
+<h2>Tests</h2>
+<table class="test-battery-tables" id="test-list">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @{int i = 1;}
+    @foreach (var item in Model.Tests)
+    {
+        <tr id="test@(i)">
+            <td>@item.Name</td>
+            <td><a href="" id="@(i++)" class="add addRemoveLink">Add</a></td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>
+
+<div id="right-container">
+<h2>Test Battery</h2>
+
+<table class="test-battery-tables">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Test</th>
+        </tr>
+    </thead>
+    <tbody id="test-battery">
+    </tbody>
+</table>
+</div>
+
